@@ -8,15 +8,17 @@ import wait from "./assets/wait.gif";
 const App = () => {
   const [name, setName] = useState("");
   const [twitter, setTwitter] = useState("");
-  const [flag, setFlag] = useState(true);
+  const [flag, setFlag] = useState(false);
   const queryParams = new URLSearchParams(window.location.search);
   const sitename = queryParams.get("sitename");
   const twitterHandle = queryParams.get("twitterHandle");
 
-  useEffect(() => {
-    setFlag(!flag);
-  }, [])
   
+  useEffect(() => {
+    if (sitename && twitterHandle) {
+      setFlag(true);
+    }
+  })
   
 
   return (

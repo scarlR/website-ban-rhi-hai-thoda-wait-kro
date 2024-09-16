@@ -43,14 +43,14 @@ const App = () => {
         <div className="w-full flex flex-col gap-2 items-center justify-center h-screen font-bold font-mono bg-black text-white">
           <img src={eye} alt="eye" className="w-48 h-48" />
           <div className="flex justify-center items-center gap-2 ">
-            <label className="text-xl" htmlFor="name">
+            <label className="text-xl" htmlFor="username">
               Enter your name
             </label>
             <input
               type="text"
-                id="name"
+                id="username"
                 value={name}
-              onChange={(e) => setTwitter(e.target.value)}
+              onChange={(e) => setName(e.target.value)}
               className="border-2 border-red-300 mt-2 p-2 rounded-xl text-black"
             />
           </div>

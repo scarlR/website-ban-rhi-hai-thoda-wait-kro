@@ -15,7 +15,7 @@ const App = () => {
 
   useEffect(() => {
     setFlag(!flag);
-  }, [false])
+  }, [flag])
   
   
 

@@ -48,8 +48,8 @@ const App = () => {
             </label>
             <input
               type="text"
-                id="username"
-                value={name}
+              id="username"
+              value={name}
               onChange={(e) => setName(e.target.value)}
               className="border-2 border-red-300 mt-2 p-2 rounded-xl text-black"
             />
@@ -60,15 +60,15 @@ const App = () => {
             </label>
             <input
               type="text"
-                id="t_name"
-                value={twitter}
+              id="t_name"
+              value={twitter}
               onChange={(e) => setTwitter(e.target.value)}
               className="border-2 border-red-300 mt-2 p-2 rounded-xl ml-3 text-black"
             />
           </div>
           <button>
             <a
-              href={`https://ban-rhi-hai-wait-kro.vercel.app/?sitename=${name}&twitterHandle=${twitter}`}
+              href={`https://website-ban-rhi-hai-thoda-wait-kro.vercel.app/?sitename=${name}&twitterHandle=${twitter}`}
               onClick={() => setFlag(true)}
             >
               <img

@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from 'react'
 import eye from "./assets/eye.gif";
 import send from "./assets/send.svg";
+import wait from "./assets/wait.gif";
 
 const App = () => {
   const [name, setName] = useState("");
